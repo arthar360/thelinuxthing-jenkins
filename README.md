@@ -4,7 +4,6 @@ This vagrant file deploys 2 machines
     - master
     - node1
 
-
 master vm
    
     - master.example.com 
