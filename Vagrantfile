@@ -13,17 +13,10 @@ Vagrant.configure("2") do |config|
 	      node1.vm.hostname = "node1.example.com"
 	      node1.vm.network "private_network", ip: "172.16.1.201"
         end
-
-        config.vm.define "node2" do |node2|
-          node2.vm.box = "ubuntu/xenial647"
-	       node2.vm.hostname = "node2.example.com"
-	       node2.vm.network "private_network", ip: "172.16.1.202"
-        end
         
    	config.vm.provision "shell", inline: <<-SHELL
      	  echo 172.16.1.100 master.example.com master >> /etc/hosts
      	  echo 172.16.1.201 node1.example.com node1 >> /etc/hosts
-     	  echo 172.16.1.202 node2.example.com node2 >> /etc/hosts
         apt-get update
         apt-get install vim -y
         echo root:redhat | chpasswd
