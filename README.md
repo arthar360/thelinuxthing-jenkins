@@ -1,4 +1,5 @@
-<a href='https://build.thelinuxthing.com/job/thelinuxthing-jenkins/'><img src=https://build.thelinuxthing.com/job/thelinuxthing-jenkins/badge/icon'></a>
+[![Build Status](https://build.thelinuxthing.com/buildStatus/icon?job=thelinuxthing-jenkins)](https://build.thelinuxthing.com/job/thelinuxthing-jenkins/)
+
 This vagrant file deploys 2 machines
 -   
   - 2 Ubuntu-16.04 machines
