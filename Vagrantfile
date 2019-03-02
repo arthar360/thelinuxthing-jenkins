@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
 	      node1.vm.hostname = "node1.example.com"
 	      node1.vm.network "private_network", ip: "172.16.1.201"
         end
-        RANDOM BREAKING LINES
+
    	config.vm.provision "shell", inline: <<-SHELL
      	  echo 172.16.1.100 master.example.com master >> /etc/hosts
      	  echo 172.16.1.201 node1.example.com node1 >> /etc/hosts
