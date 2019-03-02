@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
 	      node1.vm.hostname = "node1.example.com"
 	      node1.vm.network "private_network", ip: "172.16.1.201"
         end
-
+random to break the code
         config.vm.define "node2" do |node2|
           node2.vm.box = "ubuntu/xenial647"
 	       node2.vm.hostname = "node2.example.com"
