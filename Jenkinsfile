@@ -1,13 +1,15 @@
 pipeline { 
     agent any 
     stages {
-        stage('Build') { 
+        stage('Build local') { 
             steps { 
                 sh 'vagrant validate'
             }
-        build{
-            'thelinuxthing-jenkins'
         }
-        }
+         stage ('Build ansible') {
+            build {
+                'thelinuxthing-jenkins'
+            }
+         }
     }
 }
