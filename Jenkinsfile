@@ -5,6 +5,9 @@ pipeline {
             steps { 
                 sh 'vagrant validate'
             }
+        build{
+            'thelinuxthing-jenkins'
+        }
         }
     }
 }
