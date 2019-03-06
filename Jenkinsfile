@@ -7,8 +7,8 @@ pipeline {
             }
         }
          stage ('Build ansible') {
-            build {
-                'thelinuxthing-jenkins'
+            steps {
+                build 'thelinuxthing-jenkins'
             }
          }
     }
