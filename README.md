@@ -1,4 +1,4 @@
-[![Build Status](http://build.thelinuxthing.com/buildStatus/icon?job=thelinuxthing-jenkins)](https://build.thelinuxthing.com/job/thelinuxthing-jenkins/)
+[![Build Status](http://build.thelinuxthing.com/buildStatus/icon?job=thelinuxthing-jenkins&build=24)](https://build.thelinuxthing.com/job/thelinuxthing-jenkins/)
 
 This vagrant file deploys 2 machines
 -   
