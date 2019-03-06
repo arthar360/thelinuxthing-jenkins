@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps { 
-                bash 'vagrant validate'
+                sh 'vagrant validate'
             }
         }
     }
