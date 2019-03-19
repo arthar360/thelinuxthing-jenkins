@@ -1,5 +1,6 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
+o
 Vagrant.configure("2") do |config|
   config.vm.box = "base"
       config.vm.define "master" do |master|
