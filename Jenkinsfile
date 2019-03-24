@@ -2,11 +2,15 @@ pipeline {
     agent any
         stages {
             stage('Validate') {
-                sh 'vagrant validate'
+                steps{
+                    sh 'vagrant validate'
+                }
             }
 
             stage('List files') {
-                sh 'ls'
+                steps{
+                    sh 'ls'
+                }
             }
         }
 }
