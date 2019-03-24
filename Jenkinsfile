@@ -1,5 +1,7 @@
 pipeline {
-    agent master
+    agent {
+        label 'default'
+    }
         stages {
             stage('Validate') {
                 steps{
