@@ -1,6 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 Vagrant.configure("2") do |config|
+  config.vm.box_download_insecure = true
   config.vm.box = "base"
       config.vm.define "master" do |master|
        master.vm.box = "ubuntu/xenial64"
